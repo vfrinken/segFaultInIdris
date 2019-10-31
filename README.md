@@ -14,3 +14,20 @@ A few points:
 - The number of putStrLn has an effect of when the segfault occurs
 - Currently it only segfaults in `gdb` and as a direct call, but not when run with `valgrind`
 - It segfaults on Ubuntu, but not on Mac. However, in a more complex environment (more variables, more putStrLn) it would also segfault on Mac
+
+# Testing 
+After cloning, call `./run.sh` to compile and run, the output should be
+```
+...
+GlobalState:, nl   :  [], abc   :  0
+0
+GlobalState:, nl   :  [], abc   :  0
+0
+GlobalState:, nl   :  [], abc   :  0
+0
+GlobalState:, nl   :  [], abc   :  0
+0
+./run.sh: line 7: 30144 Segmentation fault      (core dumped) ./testIt
+
+```
+the files created during compilation can be cleaned with ./clean.sh

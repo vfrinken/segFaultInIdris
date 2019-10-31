@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -f *.o *.ibc testIt
+rm -f *.o *.ibc testIt segFaultTester.h

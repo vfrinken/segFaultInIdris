@@ -18,7 +18,7 @@ Show GlobalState where
 
 
 getEmptyGlobalState : GlobalState
-getEmptyGlobalState = MkGlobalState  [] Z -- emptyOutbox [] []
+getEmptyGlobalState = MkGlobalState  [] Z
 
 problematicFunction : IO (GlobalState)
 problematicFunction = do

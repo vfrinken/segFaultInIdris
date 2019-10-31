@@ -36,8 +36,8 @@ idrisFct globalState = do
 
 
 
-consumer : FFI_Export FFI_C "segFaultTester.h" []
-consumer = Data GlobalState "GlobalState" $
+exporter : FFI_Export FFI_C "segFaultTester.h" []
+exporter = Data GlobalState "GlobalState" $
            Fun getEmptyGlobalState "getEmptyGlobalState" $
            Fun idrisFct "idrisFct" $
            End

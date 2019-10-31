@@ -1,10 +1,8 @@
 import CFFI
 
--- some data structures
--- SubDataElement containing a List
--- Main Data Structure containing a SubDataElement
-
-
+-- a GlobalState record as main data structure
+-- containing a List Nat and a Nat, both of 
+-- which will always be empty (i.e. [], Z)
 
 public export
 record GlobalState where

@@ -22,8 +22,8 @@ problematicFunction : IO (GlobalState)
 problematicFunction = do
     let globalState = getEmptyGlobalState
     putStrLn (show globalState)
-    let listChannelMessagesLength = length (record {nl} globalState)
-    putStrLn (show listChannelMessagesLength)
+    let nlLength = length (record {nl} globalState)
+    putStrLn (show nlLength)
     pure (globalState)
 
 idrisFct : (globalState : GlobalState) -> IO Int 
